@@ -7,3 +7,5 @@
 - Search by city
 - Display current temperature and weather conditions
 - Use a weather API (e.g., WeatherApi)
+  
+**App Link:** Check this weather widget app at https://day2weatherwidget.vercel.app/
