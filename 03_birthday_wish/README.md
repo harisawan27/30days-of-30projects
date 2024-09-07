@@ -8,4 +8,4 @@
 - Display confetti on the screen
 - Light the candles & Pop the balloons
 
-**App Link:** Check this weather widget app at https://day3birthdaywish.vercel.app/
+**App Link:** Check this birthday wish app at https://day3birthdaywish.vercel.app/
