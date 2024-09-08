@@ -7,3 +7,5 @@
 - Input numbers and basic operations (+, -, *, /)
 - Display the result
 - Clear the input
+
+**App Link:** Check this simple calculator app at https://day5simplecalculator.vercel.app/
