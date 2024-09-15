@@ -8,4 +8,4 @@
 - Display the selected color value (hex, rgb)
 - Copy color value to clipboard
 
-**App Link:** Check this simple calculator app at https://day8colorpicker.vercel.app/
+**App Link:** Check this color picker app at https://day8colorpicker.vercel.app/
