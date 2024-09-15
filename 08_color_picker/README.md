@@ -7,3 +7,5 @@
 - Color input to select a color
 - Display the selected color value (hex, rgb)
 - Copy color value to clipboard
+
+**App Link:** Check this simple calculator app at https://day8colorpicker.vercel.app/
