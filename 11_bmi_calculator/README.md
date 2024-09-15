@@ -7,3 +7,5 @@
 - Input for height and weight
 - Calculate and display BMI
 - Display BMI category (underweight, normal, overweight, obese)
+
+**App Link:** Check this BMI calculator app at https://day11bmicalculator.vercel.app/
