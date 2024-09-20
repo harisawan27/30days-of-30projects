@@ -88,12 +88,12 @@ export default function TipCalculator() {
           {/* Display the calculated tip amount */}
           <div className="flex items-center justify-between">
             <span>Tip Amount:</span>
-            <span className="font-bold">${tipAmount.toFixed(2)}</span>
+            <span className="font-bold">PKR.{tipAmount.toFixed(2)}</span>
           </div>
           {/* Display the calculated total amount */}
           <div className="flex items-center justify-between">
             <span>Total Amount:</span>
-            <span className="font-bold">${totalAmount.toFixed(2)}</span>
+            <span className="font-bold">PKR.{totalAmount.toFixed(2)}</span>
           </div>
         </CardFooter>
       </Card>

@@ -4,6 +4,8 @@
 
 **Functionalities:**
 
-- Display current time in hours, minutes, and seconds
+- Display the current time in hours, minutes, and seconds
 - Update time every second
 - Option to toggle between 12-hour and 24-hour formats
+
+**App Link:** Check this digital clock app at https://day6digitalclock.vercel.app/
