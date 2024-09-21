@@ -8,4 +8,4 @@
 - Display the formatted HTML Preview
 - Support basic HTML syntax
 
-**App Link:** Check this unit converter app at https://day13htmlpreviewer.vercel.app/
+**App Link:** Check this HTML previewer app at https://day13htmlpreviewer.vercel.app/
