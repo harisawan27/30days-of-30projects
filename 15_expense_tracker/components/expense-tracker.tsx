@@ -63,11 +63,11 @@ export default function ExpenseTracker() {
   const [newExpense, setNewExpense] = useState<{
     name: string;
     amount: string;
-    date: Date;
+    date: string; // Keep date as a string
   }>({
     name: "",
     amount: "",
-    date: new Date(),
+    date: new Date().toISOString().slice(0, 10), // Initial date as ISO string
   });
 
   // useEffect to load expenses from local storage or set initial expenses
@@ -100,7 +100,7 @@ export default function ExpenseTracker() {
         id: expenses.length + 1,
         name: newExpense.name,
         amount: parseFloat(newExpense.amount),
-        date: new Date(newExpense.date),
+        date: new Date(newExpense.date), // Convert string back to Date
       },
     ]);
     resetForm(); // Reset the input form
@@ -114,7 +114,7 @@ export default function ExpenseTracker() {
       setNewExpense({
         name: expenseToEdit.name,
         amount: expenseToEdit.amount.toString(),
-        date: expenseToEdit.date,
+        date: expenseToEdit.date.toISOString().slice(0, 10), // Convert Date to string for input
       });
       setCurrentExpenseId(id);
       setIsEditing(true);
@@ -127,7 +127,7 @@ export default function ExpenseTracker() {
     setExpenses(
       expenses.map((expense) =>
         expense.id === currentExpenseId
-          ? { ...expense, ...newExpense, amount: parseFloat(newExpense.amount) }
+          ? { ...expense, ...newExpense, amount: parseFloat(newExpense.amount), date: new Date(newExpense.date) }
           : expense
       )
     );
@@ -140,7 +140,7 @@ export default function ExpenseTracker() {
     setNewExpense({
       name: "",
       amount: "",
-      date: new Date(),
+      date: new Date().toISOString().slice(0, 10),
     });
     setIsEditing(false);
     setCurrentExpenseId(null);
@@ -162,7 +162,7 @@ export default function ExpenseTracker() {
     const { id, value } = e.target;
     setNewExpense((prevExpense) => ({
       ...prevExpense,
-      [id]: id === "amount" ? value : new Date(value),
+      [id]: value, // Assign value directly as string
     }));
   };
 
@@ -174,7 +174,7 @@ export default function ExpenseTracker() {
         <div className="flex justify-between items-center">
           <h1 className="text-2xl font-bold">Expense Tracker</h1>
           <div className="text-2xl font-bold">
-            Total: ${totalExpenses.toFixed(2)}
+            Total: PKR.{totalExpenses.toFixed(2)}
           </div>
         </div>
       </header>
@@ -189,7 +189,7 @@ export default function ExpenseTracker() {
               <div>
                 <h3 className="text-lg font-medium">{expense.name}</h3>
                 <p className="text-muted-foreground">
-                  ${expense.amount.toFixed(2)} -{" "}
+                  PKR.{expense.amount.toFixed(2)} -{" "}
                   {format(expense.date, "dd/MM/yyyy")}
                 </p>
               </div>
@@ -262,7 +262,7 @@ export default function ExpenseTracker() {
                 <Input
                   id="date"
                   type="date"
-                  value={newExpense.date.toISOString().slice(0, 10)}
+                  value={newExpense.date}
                   onChange={handleInputChange}
                 />
               </div>
