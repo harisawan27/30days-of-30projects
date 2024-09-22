@@ -6,4 +6,6 @@
 
 - Set work and break durations
 - Start, pause, and reset the timer
-- Display current session (work/break) and remaining time
+- Display the current session (work/break) and remaining time
+
+**App Link:** Check this pomodoro timer app at https://day14pomodorotimer.vercel.app/
