@@ -100,7 +100,7 @@ export default function GitHubProfileViewer() {
           </CardTitle>
           <CardDescription className="text-gray-600">
             Search for a GitHub username and view their profile and
-            repositories, search like: AsharibAli
+            repositories, search like: harisawan27
           </CardDescription>
         </CardHeader>
         {/* Form to input GitHub username */}
