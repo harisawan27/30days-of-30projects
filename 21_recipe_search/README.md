@@ -7,3 +7,5 @@
 - Search by ingredient
 - Display recipe details (title, ingredients, instructions)
 - Use a recipe API (e.g., Edamam)
+
+**App Link:** Check this recipe search app at https://day21recipesearch.vercel.app/
