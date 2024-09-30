@@ -8,4 +8,4 @@
 - Display word and character count
 - Clear input text
 
-**App Link:** Check this recipe search app at https://day22wordcounter.vercel.app/
+**App Link:** Check this word counter app at https://day22wordcounter.vercel.app/
