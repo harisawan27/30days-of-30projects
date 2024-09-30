@@ -1,4 +1,4 @@
-# Day 23: Word Counter
+# Day 22: Word Counter
 
 **Description:** Count the words and characters in a text.
 
