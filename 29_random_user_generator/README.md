@@ -7,3 +7,5 @@
 - Fetch random user profiles from an API
 - Display user details (name, email, address, UUID, picture)
 - Button to fetch a new random user & appreciate
+
+**App Link:** Check this random user generator app at https://day29randomusergenerator.vercel.app/
